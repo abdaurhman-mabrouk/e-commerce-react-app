@@ -4,13 +4,22 @@ import ProductDetail from './pages/ProductDetails/ProductDetails';
 import Cart from './pages/Cart/Cart';
 import Checkout from './pages/Checkout/Checkout';
 import NotFound from './pages/NotFound/NotFound';
+import ProductsList from './components/product/ProductsList/ProductsList';
+import About from './pages/About/About';
+import ProductDetails from './pages/ProductDetails/ProductDetails';
+import CategoriesList from './components/categories/CategoriesList/CategoriesList';
+import Offers from './pages/Offers/Offers';
 
 export const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<Home />} />
-    <Route path="/product/:id" element={<ProductDetail />} />
+    <Route path="/categories_list" element={<CategoriesList />} />
+    <Route path="/products_list" element={<ProductsList />} />
+    <Route path="/offers" element={<Offers />} />
+    <Route path="/product/:id" element={<ProductDetails />} />
     <Route path="/cart" element={<Cart />} />
     <Route path="/checkout" element={<Checkout />} />
+    <Route path="/about" element={<About />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

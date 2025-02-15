@@ -11,7 +11,8 @@ body {
   min-height: 100vh;
 }
 
-.main-content {
+main.main-content {
   flex: 1;
-  padding: 2rem;
+  padding: 80px 15px 15px 15px;
+  /* padding: 2rem; */
 }

@@ -5,18 +5,26 @@ import './Header.css';
 function Header() {
   return (
     <header className="header">
-      <div className="logo">
+      <div className="logo-div div">
         <Link to="/">E-Commerce App</Link>
       </div>
 
-      <nav>
+      <nav className="top-nav nav top">
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
           </li>
 
           <li>
-            <Link to="/products_list">Product List</Link>
+            <Link to="/categories_list">Categories</Link>
+          </li>
+
+          <li>
+            <Link to="/products_list">Products</Link>
+          </li>
+
+          <li>
+            <Link to="/offers">Offers</Link>
           </li>
 
           <li>

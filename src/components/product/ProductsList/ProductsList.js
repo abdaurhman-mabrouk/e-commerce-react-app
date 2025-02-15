@@ -15,9 +15,9 @@ function ProductsList() {
   }, []);
 
   return (
-    <div className="product-list-div">
+    <div className="products-list-div">
       <h1>Our Products List</h1>
-      <span className="product-list-card">
+      <span className="product-list-card item product card">
         {products.map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
