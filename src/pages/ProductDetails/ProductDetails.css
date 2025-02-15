@@ -1,0 +1,39 @@
+.product-detail {
+  padding: 2rem;
+  text-align: center;
+}
+
+.detail-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.detail-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.detail-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.detail-description {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.detail-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.detail-button:hover {
+  background-color: #0056b3;
+}
