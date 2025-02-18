@@ -1,5 +1,5 @@
 import React from 'react';
-import OffersList from '../../components/offers/OffersList/OffersList';
+import OffersList from '../../../components/offers/OffersList/OffersList';
 
 function Offers() {
   return (

@@ -1,22 +1,24 @@
-// filepath: /D:/Programming/Projects/React.js/e-commerce-react-app/src/pages/Cart/Cart.js
-import React, { useContext } from 'react';
-import { CartContext } from '../../context/CartContext';
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import CartItemsList from '../../components/cart/CartItemsList/CartItemsList';
+import './Cart.css';
 
-const Cart = () => {
-  const { cart } = useContext(CartContext);
+function Cart() {
+  const navigate = useNavigate();
+
+  const handleCheckout = () => {
+    navigate('/checkout');
+  };
 
   return (
-    <div>
-      <h1>Cart</h1>
-      <ul>
-        {cart.map((item, index) => (
-          <li key={index}>
-            {item.name} - ${item.price}
-          </li>
-        ))}
-      </ul>
+    <div className="cart">
+      <h1>Your Cart</h1>
+      <CartItemsList />
+      <button className="checkout-button" onClick={handleCheckout}>
+        Checkout
+      </button>
     </div>
   );
-};
+}
 
 export default Cart;

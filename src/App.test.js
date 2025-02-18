@@ -1,11 +1,19 @@
-import { render, screen, waitFor } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { BrowserRouter } from 'react-router-dom';
 import App from './App';
-// import * as productService from './services/productService';
+import MainProvider from './context/MainProvider';
 
-test('renders learn react link', async () => {
-  render(<App />);
-  const linkElement = await waitFor(() =>
-    screen.findByText(/Welcome to Our E-Commerce Store/i)
+test('renders welcome message', async () => {
+  render(
+    <BrowserRouter>
+      <MainProvider>
+        <App />
+      </MainProvider>
+    </BrowserRouter>
+  );
+  const linkElement = await screen.findByText(
+    /Welcome to Our E-Commerce Store/i
   );
   expect(linkElement).toBeInTheDocument();
 });

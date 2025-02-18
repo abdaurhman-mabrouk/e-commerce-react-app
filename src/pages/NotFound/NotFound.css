@@ -2,3 +2,17 @@
   text-align: center;
   padding: 2rem;
 }
+
+.home-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+}
+
+.home-link:hover {
+  background-color: #0056b3;
+}

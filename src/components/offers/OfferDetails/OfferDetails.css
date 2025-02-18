@@ -1,0 +1,29 @@
+.offer-details {
+  text-align: center;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offer-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.offer-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.offer-discount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.offer-category {
+  font-size: 1rem;
+  margin: 1rem 0;
+}

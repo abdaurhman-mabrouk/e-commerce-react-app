@@ -1,0 +1,15 @@
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.cart-item-name {
+  font-size: 1rem;
+}
+
+.cart-item-price {
+  font-size: 1rem;
+  font-weight: bold;
+}

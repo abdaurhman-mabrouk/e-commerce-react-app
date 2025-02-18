@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@stripe/react-stripe-js": "^3.1.1",
+    "@stripe/stripe-js": "^5.6.0",
+    "@testing-library/react": "^16.2.0",
     "axios": "^1.7.9",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "dotenv": "^16.4.7",
     "e-commerce-react-app": "file:",
-    "react": "^18.0.0",
+    "react": "^19.0.0",
     "react-bootstrap": "^2.10.9",
-    "react-dom": "^18.0.0",
+    "react-dom": "^19.0.0",
     "react-router-dom": "^7.1.5",
     "react-scripts": "5.0.1"
   },
@@ -39,6 +42,7 @@
     ]
   },
   "devDependencies": {
-    "@4c/tsconfig": "^0.4.1"
+    "@4c/tsconfig": "^0.4.1",
+    "@testing-library/jest-dom": "^6.6.3"
   }
 }

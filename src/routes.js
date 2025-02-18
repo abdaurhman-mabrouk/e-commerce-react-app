@@ -9,6 +9,7 @@ import About from './pages/About/About';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import CategoriesList from './components/categories/CategoriesList/CategoriesList';
 import Offers from './pages/Offers/Offers';
+import OfferDetails from './pages/OfferDetails/OfferDetails';
 
 export const AppRoutes = () => (
   <Routes>
@@ -16,6 +17,7 @@ export const AppRoutes = () => (
     <Route path="/categories_list" element={<CategoriesList />} />
     <Route path="/products_list" element={<ProductsList />} />
     <Route path="/offers" element={<Offers />} />
+    <Route path="/offer/:id" element={<OfferDetails />} />
     <Route path="/product/:id" element={<ProductDetails />} />
     <Route path="/cart" element={<Cart />} />
     <Route path="/checkout" element={<Checkout />} />

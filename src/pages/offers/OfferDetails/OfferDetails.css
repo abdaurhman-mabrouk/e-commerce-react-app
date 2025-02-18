@@ -1,0 +1,26 @@
+.offer-details {
+  text-align: center;
+  padding: 2rem;
+}
+
+.offer-image {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+}
+
+.offer-title {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.offer-discount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.offer-category {
+  font-size: 1rem;
+  margin: 1rem 0;
+}

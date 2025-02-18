@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchProducts } from '../../../services/productService';
+import { fetchProducts } from '../../../services/productsService';
 import ProductCard from '../ProductCard/ProductCard';
 import './ProductsList.css';
 
@@ -17,11 +17,11 @@ function ProductsList() {
   return (
     <div className="products-list-div">
       <h1>Our Products List</h1>
-      <span className="product-list-card item product card">
-        {products.map((product) => (
+      <div className="product-list-card">
+        {(products || []).map((product) => (
           <ProductCard key={product.id} product={product} />
         ))}
-      </span>
+      </div>
     </div>
   );
 }

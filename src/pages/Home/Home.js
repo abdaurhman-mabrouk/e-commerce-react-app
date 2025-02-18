@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { fetchProducts } from '../../services/productService';
+import { fetchProducts } from '../../services/productsService';
 import ProductsList from '../../components/product/ProductsList/ProductsList';
 import './Home.css';
 import CategoriesList from '../../components/categories/CategoriesList/CategoriesList';
@@ -24,7 +24,7 @@ function Home() {
       </div>
 
       <div className="product-list-div list-div div">
-        <ProductsList />
+        <ProductsList products={productsList} />
       </div>
     </div>
   );

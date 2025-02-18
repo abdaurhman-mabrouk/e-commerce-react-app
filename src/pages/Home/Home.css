@@ -1,6 +1,11 @@
-div.home-div {
+.home-div {
   max-width: 100%;
   padding-top: 60px;
   padding: 2rem;
   text-align: center;
+}
+
+.categories-list-div,
+.product-list-div {
+  margin-top: 2rem;
 }
