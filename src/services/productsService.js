@@ -1,5 +1,5 @@
 import axios from 'axios';
-// const ENV = require('dotenv').config('../../.env');
+
 const API_URL = 'https://fakestoreapi.com';
 
 export const fetchProducts = async () => {
