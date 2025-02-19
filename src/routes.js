@@ -9,7 +9,7 @@ import About from './pages/About/About';
 import ProductDetails from './pages/ProductDetails/ProductDetails';
 import CategoriesList from './components/categories/CategoriesList/CategoriesList';
 import Offers from './pages/Offers/Offers';
-import OfferDetails from './pages/OfferDetails/OfferDetails';
+import OfferDetails from './components/offers/OfferDetails/OfferDetails';
 
 export const AppRoutes = () => (
   <Routes>

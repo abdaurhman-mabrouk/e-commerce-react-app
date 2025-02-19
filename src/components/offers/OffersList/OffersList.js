@@ -1,17 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { offersList } from '../../../services/offersService';
+import React from 'react';
+import offers from '../../../data/offers';
 import OfferCard from '../OfferCard/OfferCard';
 import './OffersList.css';
 
 function OffersList() {
-  const [offers, setOffers] = useState([]);
-
-  useEffect(() => {
-    setOffers(offersList);
-  }, []);
-
   return (
-    <div className="offers-list-div">
+    <div className="offers-list">
       {offers.map((offer) => (
         <OfferCard key={offer.id} offer={offer} />
       ))}

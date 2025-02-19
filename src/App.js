@@ -7,7 +7,6 @@ import ProductsList from './components/product/ProductsList/ProductsList';
 import OffersList from './components/offers/OffersList/OffersList';
 import CategoriesList from './components/categories/CategoriesList/CategoriesList';
 import './assets/styles/global.css';
-import OfferDetails from './pages/offers/OfferDetails/OfferDetails';
 
 // Lazy Loading
 const Home = lazy(() => import('./pages/Home/Home'));
@@ -19,6 +18,9 @@ const Checkout = lazy(() => import('./pages/Checkout/Checkout'));
 const About = lazy(() => import('./pages/About/About'));
 const NotFound = lazy(() => import('./pages/NotFound/NotFound'));
 const Offers = lazy(() => import('./pages/offers/Offers/Offers'));
+const OfferDetails = lazy(() =>
+  import('./pages/offers/OfferDetails/OfferDetails')
+);
 
 function App() {
   return (

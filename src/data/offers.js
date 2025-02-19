@@ -1,24 +1,27 @@
 const offers = [
   {
     id: 0,
-    title: 'offer 0 title',
+    title: '25% Off Laptops',
+    description: 'Get 25% off on all laptops. Limited time offer!',
     discount: 25,
-    image: 'src/assets/images/offer.png',
-    categoy: 'laptops',
+    image: '/offer.png', // Ensure this path is correct
+    category: 'laptops',
   },
   {
     id: 1,
-    title: 'offer 1 title',
+    title: '40% Off Smartphones',
+    description: 'Save 40% on the latest smartphones. Hurry up!',
     discount: 40,
-    image: 'src/assets/images/offer.png',
-    categoy: 'smartphones',
+    image: '/offer.png', // Ensure this path is correct
+    category: 'smartphones',
   },
   {
     id: 2,
-    title: 'offer 2 title',
+    title: '50% Off Accessories',
+    description: "Enjoy 50% off on all accessories. Don't miss out!",
     discount: 50,
-    image: 'src/assets/images/offer.png',
-    categoy: 'accessories',
+    image: '/offer.png', // Ensure this path is correct
+    category: 'accessories',
   },
 ];
 
