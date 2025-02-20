@@ -14,25 +14,26 @@ function Header() {
           <li>
             <Link to="/">Home</Link>
           </li>
-
           <li>
             <Link to="/categories_list">Categories</Link>
           </li>
-
           <li>
             <Link to="/products_list">Products</Link>
           </li>
-
           <li>
             <Link to="/offers">Offers</Link>
           </li>
-
           <li>
             <Link to="/cart">Cart</Link>
           </li>
-
           <li>
             <Link to="/about">About</Link>
+          </li>
+          |
+          <li>
+            <li>
+              <Link to="/login">Login</Link> <Link to="/signup">Sign Up</Link>
+            </li>
           </li>
         </ul>
       </nav>
