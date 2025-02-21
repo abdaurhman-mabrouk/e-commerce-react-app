@@ -1,0 +1,35 @@
+.orders-history-container {
+  padding: 1rem;
+}
+
+.orders-history-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.orders-history-table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+}
+
+.orders-history-header {
+  background-color: #f0f0f0;
+}
+
+.orders-history-header-cell {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: bold;
+}
+
+.orders-history-row {
+  text-align: center;
+}
+
+.orders-history-cell {
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+}
