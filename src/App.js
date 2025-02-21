@@ -21,6 +21,10 @@ const Offers = lazy(() => import('./pages/offers/Offers/Offers'));
 const OfferDetails = lazy(() =>
   import('./pages/offers/OfferDetails/OfferDetails')
 );
+const Signup = lazy(() => import('./pages/Signup/Signup'));
+const Login = lazy(() => import('./pages/Login/Login'));
+const Profile = lazy(() => import('./pages/Profile/Profile'));
+const EditProfile = lazy(() => import('./pages/EditProfile/EditProfile'));
 
 function App() {
   return (
@@ -39,6 +43,10 @@ function App() {
               <Route path="/cart" element={<Cart />} />
               <Route path="/checkout" element={<Checkout />} />
               <Route path="/about" element={<About />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/profile" element={<Profile />} />
+              <Route path="/edit_profile" element={<EditProfile />} />
               <Route path="*" element={<NotFound />} />
             </Routes>
           </Suspense>

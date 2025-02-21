@@ -10,6 +10,9 @@ import ProductDetails from './pages/ProductDetails/ProductDetails';
 import CategoriesList from './components/categories/CategoriesList/CategoriesList';
 import Offers from './pages/Offers/Offers';
 import OfferDetails from './components/offers/OfferDetails/OfferDetails';
+import Signup from './pages/Signup/Signup';
+import Login from './pages/Login/Login';
+import Profile from './pages/Profile/Profile';
 
 export const AppRoutes = () => (
   <Routes>
@@ -22,6 +25,9 @@ export const AppRoutes = () => (
     <Route path="/cart" element={<Cart />} />
     <Route path="/checkout" element={<Checkout />} />
     <Route path="/about" element={<About />} />
+    <Route path="/signup" element={<Signup />} />
+    <Route path="/login" element={<Login />} />
+    <Route path="/profile" element={<Profile />} />
     <Route path="*" element={<NotFound />} />
   </Routes>
 );

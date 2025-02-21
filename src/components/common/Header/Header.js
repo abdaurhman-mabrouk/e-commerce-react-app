@@ -1,15 +1,18 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
+import profile_logo from '../../../assets/images/profile.png';
 
 function Header() {
   return (
     <header className="header">
-      <div className="logo-div div">
-        <Link to="/">E-Commerce App</Link>
+      <div className="logo-div">
+        <Link to="/" className="logo-link">
+          E-Commerce App
+        </Link>
       </div>
 
-      <nav className="top-nav nav top">
+      <nav className="top-nav">
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>
@@ -29,11 +32,19 @@ function Header() {
           <li>
             <Link to="/about">About</Link>
           </li>
-          |
+          <li className="auth-links">
+            <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link>
+          </li>
           <li>
-            <li>
-              <Link to="/login">Login</Link> <Link to="/signup">Sign Up</Link>
-            </li>
+            <Link to="/profile" className="profile-link">
+              Profile
+              <img
+                src={profile_logo}
+                alt="User Logo"
+                className="profile-logo"
+              />
+            </Link>
           </li>
         </ul>
       </nav>
